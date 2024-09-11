@@ -2,8 +2,7 @@
 "use Client"
 import Image from 'next/image'
 import React from 'react'
-import { motion } from 'framer-motion'
-
+import {motion} from 'framer-motion'
 function Card({ icon, title, description, block = '' , padding =''  }) {
     return (
         <> 
