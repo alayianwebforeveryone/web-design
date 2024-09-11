@@ -65,7 +65,7 @@ const Pricing = () => {
               <h2 className="text-headColor text-xl font-bold md:text-5xl">
                 Take the first step now!
               </h2>
-              <p className="py-8">It's nice to see you come all the way</p>
+              <p className="py-8">It&aps;s nice to see you come all the way</p>
             </div>
             <div className="w-[40%]">
               <Image

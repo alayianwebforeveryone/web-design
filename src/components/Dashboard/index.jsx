@@ -61,7 +61,7 @@ function Dashboard() {
           <div>
             <div className="leading-24 my-12 flex w-[100%] justify-center">
               <h2 className="text-headColor mt-20 w-[80%] text-3xl font-bold md:w-[50%] md:text-center md:text-5xl">
-                We're always-on to deliver the design you want when you need it
+                We&apos;re always-on to deliver the design you want when you need it
               </h2>
             </div>
           </div>
