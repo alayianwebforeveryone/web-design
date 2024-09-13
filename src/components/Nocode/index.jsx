@@ -37,7 +37,7 @@ const Nocode = () => {
     },
   ];
   return (
-    <div className="mb-24 mt-80 md:mt-48">
+    <div className="mb-24 mt-80 md:mt-48  "  id="nocode">
       <div className="mb-12 mt-4 text-center t">
         <h1 className="px-1 text-3xl md:text-5xl text-headColor  font-extrabold">Website development with no code</h1>
         <div className="mt-24 flex flex-col items-center justify-center gap-8 md:mx-24 md:flex-row">

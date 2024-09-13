@@ -3,12 +3,13 @@
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import NavLink from "./NavLinks";
-import Link from "next/link";
+// import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../../Assets/Icons/logo.svg";
 import menu from "./../../../Assets/Icons/menu.svg";
 import close from "./../../../Assets/Icons/close.svg";
+import { Link } from "react-scroll";
 
 const navLinks = [
   {
@@ -24,10 +25,7 @@ const navLinks = [
     title: "Our works",
     path: "/ourWork",
   },
-  {
-    title: "No code",
-    path: "/Nocode",
-  },
+ 
   {
     title: "Sign up",
     path: "/Signup",
@@ -56,7 +54,7 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="Alayian"
-            className="  md:h-28 md:w-36 lg:h-28 lg:w-44 xl:h-28  xl:w-72"
+            className="md:h-28 md:w-36 lg:h-28 lg:w-44 xl:h-28 xl:w-72"
           />
         </Link>
         <div className="cursor-pointer sm:hidden" onClick={toggleMenu}>
@@ -79,6 +77,32 @@ const Navbar = () => {
                 />
               </li>
             ))}
+            <li className="">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                // onSetActive={handleSetActive}
+              >
+                About
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                activeClass="active"
+                to="nocode"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                // onSetActive={handleSetActive}
+              >
+                No code
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

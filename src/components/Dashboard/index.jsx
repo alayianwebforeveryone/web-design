@@ -8,6 +8,9 @@ import Link from "next/link";
 import Banner from "../Banner/Banner";
 import ScrollReveal from "../ScrollAnimation/ScrollReveal";
 import { motion } from "framer-motion";
+import { About } from "../About/About";
+import Nocode from "../Nocode";
+
 
 function Dashboard() {
   return (
@@ -116,7 +119,22 @@ function Dashboard() {
             </div>
           </div>
         </ScrollReveal>
+
+{/* About */}
+
+
+
+
+        <div id="about">
+            <About />
+        </div>
       </div>
+
+
+      {/* no code */}
+
+
+      <Nocode/>
     </>
   );
 }
