@@ -25,7 +25,7 @@ const navLinks = [
     title: "Our works",
     path: "/ourWork",
   },
- 
+
   {
     title: "Sign up",
     path: "/Signup",
@@ -77,32 +77,35 @@ const Navbar = () => {
                 />
               </li>
             ))}
-            <li className="">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000}
-                // onSetActive={handleSetActive}
-              >
-                About
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                activeClass="active"
-                to="nocode"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000}
-                // onSetActive={handleSetActive}
-              >
-                No code
-              </Link>
-            </li>
+
+            <ul className="flex justify-center gap-4 mt-2 cursor-pointer  text-xl">
+              <li className="">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                  // onSetActive={handleSetActive}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  activeClass="active"
+                  to="nocode"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                  // onSetActive={handleSetActive}
+                >
+                  No code
+                </Link>
+              </li>
+            </ul>
           </ul>
         </div>
       </div>

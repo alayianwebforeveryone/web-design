@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import web from "../../../Assets/Icons/homepic.svg";
@@ -8,9 +8,6 @@ import Link from "next/link";
 import Banner from "../Banner/Banner";
 import ScrollReveal from "../ScrollAnimation/ScrollReveal";
 import { motion } from "framer-motion";
-import { About } from "../About/About";
-import Nocode from "../Nocode";
-
 
 function Dashboard() {
   return (
@@ -50,9 +47,10 @@ function Dashboard() {
 
         <ScrollReveal>
           <Link href="/ourWork">
-            <motion.div 
-            whileHover={{scale:1.1}}
-            className="bg-paraColor mx-auto mt-24 block w-[50%] rounded-3xl px-3 py-4 text-center text-lg font-bold text-white md:w-[15%]">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-paraColor mx-auto mt-24 block w-[50%] rounded-3xl px-3 py-4 text-center text-lg font-bold text-white md:w-[15%]"
+            >
               See All Examples
             </motion.div>
           </Link>
@@ -64,7 +62,8 @@ function Dashboard() {
           <div>
             <div className="leading-24 my-12 flex w-[100%] justify-center">
               <h2 className="text-headColor mt-20 w-[80%] text-3xl font-bold md:w-[50%] md:text-center md:text-5xl">
-                We&apos;re always-on to deliver the design you want when you need it
+                We&apos;re always-on to deliver the design you want when you
+                need it
               </h2>
             </div>
           </div>
@@ -102,39 +101,21 @@ function Dashboard() {
                 Come join 400+ companies who are doing design at scale without
                 increasing headcount
               </p>
-              <Link
-               
-                href="/ourWork"
-                className="mt-8 md:mt-0"
-              >
+              <Link href="/ourWork" className="mt-8 md:mt-0">
                 <motion.button
-                 whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.3 },
-                }}
-                className="w-full cursor-pointer rounded-3xl bg-white px-4 py-2 text-xl">
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.3 },
+                  }}
+                  className="w-full cursor-pointer rounded-3xl bg-white px-4 py-2 text-xl"
+                >
                   See Examples
                 </motion.button>
               </Link>
             </div>
           </div>
         </ScrollReveal>
-
-{/* About */}
-
-
-
-
-        <div id="about">
-            <About />
-        </div>
       </div>
-
-
-      {/* no code */}
-
-
-      <Nocode/>
     </>
   );
 }
