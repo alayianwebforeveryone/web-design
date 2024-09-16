@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="bottom-0 left-0 m-4 w-full rounded-lg bg-white shadow">
+    <footer class=" rounded-lg bg-white shadow">
       <div class="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-black sm:text-center">
           © 2023{" "}

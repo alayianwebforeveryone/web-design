@@ -9,7 +9,7 @@ const BannerCard = ({src, alt}) => {
     <div>
      
         <Image
-        className="w-[89%] mx-auto rounded-md  h-[800px]"
+        className="w-[80%] md:w-[89%] mx-auto rounded-md  md:h-[800px] h-[300px]"
         src={src} alt={alt} />
      
     </div>
